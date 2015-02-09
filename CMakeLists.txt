@@ -17,7 +17,7 @@ list(GET VERSION_LIST 2 TIDY_POINT_VERSION)
 
 # Allow developer to select is Dynamic or static library built
 set( LIB_TYPE STATIC )  # set default static
-option( BUILD_SHARED_LIB "Set ON to build Shared (DLL) Library"   OFF )
+option( BUILD_SHARED_LIB "Set ON to build Shared (DLL) Library"   ON )
 option( BUILD_TAB2SPACE  "Set ON to build utility app, tab2space" OFF )
 
 if (CMAKE_SIZEOF_VOID_P EQUAL 8)
