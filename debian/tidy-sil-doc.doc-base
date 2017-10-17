@@ -10,5 +10,5 @@ Abstract: HTML TIDY validates, corrects, and pretty-prints HTML files
 Section: Web Development
 
 Format: HTML
-Index: /usr/share/doc/tidy5-doc/htmldoc/Overview.html
-Files: /usr/share/doc/tidy5-doc/htmldoc/*.html
+Index: /opt/tidy-sil/share/doc/tidy5-doc/htmldoc/Overview.html
+Files: /opt/tidy-sil/share/doc/tidy5-doc/htmldoc/*.html

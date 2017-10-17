@@ -1,0 +1,2 @@
+debian/tmp/opt/tidy-sil/bin/*
+debian/tidy-sil.conf /opt/etc/tidy5.conf

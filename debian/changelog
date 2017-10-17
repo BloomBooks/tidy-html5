@@ -1,3 +1,9 @@
+tidy-sil (4.9.8.2) unstable; urgency=medium
+
+  * Rename packages to tidy-sil, libtidy-sil, etc. and install in /opt/tidy-sil.
+
+ -- Stephen McConnel <stephen_mcconnel@sil.org>  Tue, 17 Oct 2017 12:25:06 -0600
+
 tidy5 (4.9.8.1) unstable; urgency=medium
 
   * Fix creation of shlibs file
