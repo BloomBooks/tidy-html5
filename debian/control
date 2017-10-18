@@ -1,21 +1,21 @@
-Source: tidy5
+Source: tidy-sil
 Section: web
 Priority: optional
-Maintainer: Eberhard Beilharz <eb1@sil.org>
+Maintainer: Stephen McConnel <stephen_mcconnel@sil.org>
 Build-Depends: debhelper (>= 8),
     libtool,
     perl,
     xsltproc,
     cmake
-Standards-Version: 3.9.5
+Standards-Version: 3.9.7
 Homepage: http://www.html-tidy.org/
 Vcs-Git: https://github.com/BloomBooks/tidy-html5 -b debian
 
-Package: tidy5
+Package: tidy-sil
 Section: web
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
-	libtidy5 (>= ${binary:Version})
+	libtidy-sil (>= ${binary:Version})
 Suggests: tidy5-doc
 Replaces: tidy-html5
 Conflicts: tidy-html5
@@ -34,7 +34,7 @@ Description: HTML syntax checker and reformatter
  .
  Tidy is a product of the World Wide Web Consortium.
 
-Package: libtidy5
+Package: libtidy-sil
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -55,11 +55,11 @@ Description: HTML syntax checker and reformatter - library
  .
  Tidy is a product of the World Wide Web Consortium.
 
-Package: libtidy5-dev
+Package: libtidy-sil-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends},
-	libtidy5 (= ${binary:Version})
+	libtidy-sil (= ${binary:Version})
 Replaces: libtidy-html5-dev
 Conflicts: libtidy-html5-dev
 Description: HTML syntax checker and reformatter - development
@@ -77,7 +77,7 @@ Description: HTML syntax checker and reformatter - development
  .
  Tidy is a product of the World Wide Web Consortium.
 
-Package: tidy5-doc
+Package: tidy-sil-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}, ${shlibs:Depends}

@@ -10,7 +10,7 @@ MANPAGE=debian/tidy5.1
 VERSION=`cat version.txt`
 
 override_dh_auto_build:
-	cmake . -DCMAKE_INSTALL_PREFIX=/usr -DBUILD_SHARED_LIB:BOOL=TRUE
+	cmake . -DCMAKE_INSTALL_PREFIX=/opt/tidy-sil -DBUILD_SHARED_LIB:BOOL=TRUE
 	make
 	echo "************ Step2 *************"
 	## Generate manpage from tidy output
@@ -21,7 +21,10 @@ override_dh_auto_build:
 	/usr/bin/xsltproc -o $(MANPAGE) $(MANXSL) $(HELPXML)
 
 override_dh_makeshlibs:
-	dh_makeshlibs -V "libtidy5 (>= $(VERSION))"
+	dh_makeshlibs -V "libtidy-sil (>= $(VERSION))"
+
+override_dh_shlibdeps:
+	dh_shlibdeps -l $(CURDIR)/debian/tmp/opt/tidy-sil/lib
 
 override_dh_auto_install:
 	DESTDIR=$(CURDIR)/debian/tmp make install
